@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 784899ac15987814d8e5426c5d776b47
+timeCreated: 1434843076
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - MaterialDefault: {instanceID: 0}
+  - MaterialLuz01: {fileID: 2100000, guid: b1ae2afe435004b46b29ce4d10b5fd85, type: 2}
+  - Bola: {instanceID: 0}
+  - Plataforma01: {instanceID: 0}
+  - Audio: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

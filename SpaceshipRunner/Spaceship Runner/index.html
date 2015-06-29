@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Spaceship Runner</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="libraries/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+        <script src="libraries/jquery/jquery.js"></script>
+        <script src="libraries/phaser/phaser.js"></script>
+        <script src="js/ranking.js"></script>
+        <script src="game.js"></script>
+        <script src="libraries/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    </head>
+    <body id="body">
+        <div id="game"></div>
+
+        <div id="ranking">
+            <table id="tableScore">
+                </table>
+            <br>
+            <div class="divScore">
+                <span id="scoreSpan" name="scoreSpan" class="scoreSpan">Tu puntuación ha sido de</span>
+                <br>
+                ¡Introduce tres siglas para entrar en el ranking!
+                <br>
+                <input type="text" id="nombre" name="nombre" style="margin-top: 10px" maxlength="3"> <input type="button" onclick="submitRanking()" value="Enviar">
+            </div>
+            <div class="reiniciar" style="text-align:center;">
+                <input type="submit" value="Reiniciar" onclick="reiniciar()">
+            </div>
+        </div>
+
+        <div class="sound">
+            <button class="buttonSound" onclick="toggleSound()" style="background-color: black;">
+                <img src="assets/icons/Circular_auriculars_64.png" id="imgSound">
+            </button>
+            <input type="hidden" name="valueSound" id="valueSound" value="true" class="valueSound" />
+        </div>
+
+        <div class="rankingGlobal">
+                <a href="http://www.adrig.es/mallorcagame/ranking.php" class="btn btn-default" target="_blank">Ranking</a>
+                <a href="http://www.adrig.es/mallorcagame/creditos.php" class="btn btn-default" target="_blank">Créditos</a>
+        </div>
+    </body>
+</html>

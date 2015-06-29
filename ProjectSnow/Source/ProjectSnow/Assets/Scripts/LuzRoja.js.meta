@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 80e9e5ad41f8f9a42a5d26cbd37fdabe
+timeCreated: 1434843112
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - MaterialDefault: {fileID: 2100000, guid: b17336fe2ed9dd943965843c88e81d90, type: 2}
+  - MaterialRojo01: {fileID: 2100000, guid: 841740564ef76c84d8526675ef95312d, type: 2}
+  - MaterialBolaDefault: {fileID: 2100000, guid: f5847509a3730334a9def1cba1d7d19f,
+      type: 2}
+  - MaterialBolaRojo: {fileID: 2100000, guid: 34fd50098be482e44b3c37461ff64d67, type: 2}
+  - BolaLuz: {instanceID: 0}
+  - Bola: {instanceID: 0}
+  - Plataforma01: {instanceID: 0}
+  - Audio: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

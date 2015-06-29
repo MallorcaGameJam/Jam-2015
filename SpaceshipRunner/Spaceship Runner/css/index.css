@@ -1,0 +1,64 @@
+#body
+{
+	background-color: black;
+}
+
+.sound
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    margin-top: -300px;
+    margin-left: 319px;
+}
+
+.rankingGlobal
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 170px;
+    height: 64px;
+    margin-top: 210px;
+    margin-left: 242px;
+}
+
+#ranking
+{
+	font-style: Arial;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+    width: 400px;
+    height: 100px;
+    text-align: left;
+    display: none;
+}
+
+#ranking table
+{
+	width: 400px;
+}
+
+.divScore
+{
+	background-color: white;
+	padding: 10px;
+	border: 2px thin solid white;
+	border-radius: 8px;
+}
+
+#game
+{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -400px;
+    width: 800px;
+    height: 400px;
+}​

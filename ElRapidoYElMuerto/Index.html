@@ -1,0 +1,84 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El rapido y el muerto - Un juego de duelos</title>
+    <link href='http://fonts.googleapis.com/css?family=Rye' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">El rapido y el muerto</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Inicio</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="game"></div>
+        <div id="orientation"></div>
+    </div>
+    <script src="src/jquery-1.10.2.js"></script>
+    <script src="src/bootstrap.js"></script>
+    <script src="src/phaser.js"></script>
+    <script src="src/Boot.js"></script>
+    <script src="src/Preloader.js"></script>
+    <script src="src/MainMenu.js"></script>
+    <script src="src/Select.js"></script>
+    <script src="src/PreDuel.js"></script>
+    <script src="src/Duel.js"></script>
+    <script src="src/Dead.js"></script>
+    <script src="src/Points.js"></script>
+    <script src="src/Win.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            /*Inicio el juego*/
+            var game = new Phaser.Game(640, 480, Phaser.AUTO, 'game');
+            /*Estas son las pantallas de las que constará el juego*/
+            game.state.add('Boot', ElRapidoYElMuerto.Boot);
+            game.state.add('Preloader', ElRapidoYElMuerto.Preloader);
+            game.state.add('MainMenu', ElRapidoYElMuerto.MainMenu);
+            game.state.add('Select', ElRapidoYElMuerto.Select);
+            game.state.add('PreDuel', ElRapidoYElMuerto.PreDuel);
+            game.state.add('Duel', ElRapidoYElMuerto.Duel);
+            game.state.add('Points', ElRapidoYElMuerto.Points);
+            game.state.add('Dead', ElRapidoYElMuerto.Dead);
+            game.state.add('Win', ElRapidoYElMuerto.Win);
+            /*Cargo la pantalla de Boot*/
+            game.state.start('Boot');
+        };
+
+        function textoOeste(txtTitle, size, hadShadow, hadDegrade) {
+            txtTitle.anchor.setTo(0.5);
+            txtTitle.font = 'Rye';
+            txtTitle.fontSize = size;
+            if ((hadDegrade != undefined) && (hadDegrade = true)) {
+                var grd = txtTitle.context.createLinearGradient(0, 0, 0, txtTitle.canvas.height);
+                grd.addColorStop(0, '#fff');
+                grd.addColorStop(1, '#6d6760');
+                txtTitle.fill = grd;
+                txtTitle.stroke = '#000000';
+                txtTitle.strokeThickness = 2;
+            }
+            if ((hadShadow != undefined) && (hadShadow = true)) {
+                txtTitle.setShadow(5, 5, 'rgba(0,0,0,0.5)', 5);
+            }
+        }
+    </script>
+</body>
+</html>
